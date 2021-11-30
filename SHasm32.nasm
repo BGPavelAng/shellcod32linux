@@ -43,8 +43,8 @@ mov bl, 0x3
 
 int 0x80
 
-Complete Code.
-Código completo.
+Código completo en...
+Complete code on...
 https://www.patreon.com/BGPavelAng
 Ayudame a seguir haciendo más de esto.
 
